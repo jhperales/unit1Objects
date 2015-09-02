@@ -62,5 +62,26 @@ public class TurtleLab
            t1.forward(15);
         }
         
+        t1.forward(100);
+        x = 0;
+        while (x < 100)
+        {   
+            t1.forward(x);
+            x += 1;
+            t1.turn(90);
+            t1.forward(x);
+            x += 1;
+            t1.turn(90);
+            t1.forward(x);
+            x += 1;
+            t1.turn(90);
+            t1.forward(x);
+            x += 1;
+            t1.turn(90);
+        }
+        
+        t1.forward();
+        t1.turn(90);
+        t1.forward(200);
    }
 }
