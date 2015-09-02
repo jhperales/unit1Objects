@@ -18,6 +18,8 @@ public class TurtleLab
         t1.forward(50);
         t2.forward(50);
         
+        //turtle 2 movement
+        
         int x = 0;
         while (x < 25)
         {
@@ -27,6 +29,7 @@ public class TurtleLab
         }
         
         t2.forward(15);
+        t2.setPenWidth(3);
         
         x = 0;
         while (x < 25)
@@ -36,6 +39,28 @@ public class TurtleLab
            t2.forward(15);
         }
         
+        t2.forward(25);
+        t2.setPenWidth(0);
+        x = 0;
+        while (x < 40)
+        {
+           x += 1;
+           t2.turn(x);
+           t2.forward(15);
+        }
         
-    }
+        t2.forward(100);
+        t2.setPenWidth(2);
+        
+        //turtle 1 movement
+        
+        x = 0;
+        while (x < 40)
+        {
+           x += 1;
+           t1.turn(x);
+           t1.forward(15);
+        }
+        
+   }
 }
