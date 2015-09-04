@@ -20,20 +20,37 @@ public class TurtleLab
         Thread.sleep(10);
         t2.forward(50);
         
-        //turtle 2 movement
-        
-        int x = 0;
-        while (x < 25)
-        {
-           x += 1;
-           t2.turn(-x);
-           t2.forward(15);
-           Thread.sleep(10);
+       
+       //Algorithm for creating boxes
+       int x = 0;
+       x = 0;
+        while (x < 100)
+        {   
+            t2.forward(x);
+            x += 1;
+            t2.turn(90);
+            t2.setPenColor(Color.RED);
+            Thread.sleep(10);
+            t2.forward(x);
+            x += 1;
+            t2.turn(90);
+            t2.setPenColor(Color.BLACK);
+            t2.forward(x);
+            Thread.sleep(10);
+            x += 1;
+            t2.turn(90);
+            t2.setPenColor(Color.YELLOW);
+            t2.forward(x);
+            Thread.sleep(10);
+            x += 1;
+            t2.turn(90);
+            t2.setPenColor(Color.GREEN);
         }
         t2.forward(15);
         Thread.sleep(10);
         t2.setPenWidth(3);
         
+        //algorithm for curved turns
         x = 0;
         while (x < 25)
         {
@@ -43,9 +60,30 @@ public class TurtleLab
            Thread.sleep(10);
         }
         
-        t2.forward(25);
-        Thread.sleep(10);
-        t2.setPenWidth(0);
+       x = 0;
+        while (x < 100)
+        {   
+            t2.forward(x);
+            x += 1;
+            t2.turn(90);
+            t2.setPenColor(Color.BLUE);
+            Thread.sleep(10);
+            t2.forward(x);
+            x += 1;
+            t2.turn(90);
+            t2.setPenColor(Color.MAGENTA);
+            t2.forward(x);
+            Thread.sleep(10);
+            x += 1;
+            t2.turn(90);
+            t2.setPenColor(Color.RED);
+            t2.forward(x);
+            Thread.sleep(10);
+            x += 1;
+            t2.turn(90);
+            t2.setPenColor(Color.BLACK);
+        }
+        
         x = 0;
         while (x < 40)
         {
@@ -55,11 +93,101 @@ public class TurtleLab
            Thread.sleep(10);
         }
         
-        t2.forward(100);
+        t2.forward(200);
         Thread.sleep(10);
         t2.setPenWidth(2);
         
-        //turtle 1 movement
+       
+        
+        x = 0;
+        while (x < 100)
+        {   
+            t2.forward(x);
+            x += 1;
+            t2.turn(90);
+            t2.setPenColor(Color.YELLOW);
+            Thread.sleep(10);
+            t2.forward(x);
+            x += 1;
+            t2.turn(90);
+            t2.setPenColor(Color.GREEN);
+            t2.forward(x);
+            Thread.sleep(10);
+            x += 1;
+            t2.turn(90);
+            t2.setPenColor(Color.BLUE);
+            t2.forward(x);
+            Thread.sleep(10);
+            x += 1;
+            t2.turn(90);
+            t2.setPenColor(Color.MAGENTA);
+        }
+        
+        t1.forward(100);
+        Thread.sleep(10);
+        x = 0;
+        while (x < 100)
+        {   
+            t1.forward(x);
+            x += 1;
+            t1.turn(90);
+            t1.setPenColor(Color.RED);
+            Thread.sleep(10);
+            t1.forward(x);
+            x += 1;
+            t1.turn(90);
+            t1.setPenColor(Color.BLACK);
+            t1.forward(x);
+            Thread.sleep(10);
+            x += 1;
+            t1.turn(90);
+            t1.setPenColor(Color.YELLOW);
+            t1.forward(x);
+            Thread.sleep(10);
+            x += 1;
+            t1.turn(90);
+            t1.setPenColor(Color.GREEN);
+        }
+        
+        t1.setPenColor(Color.BLUE);
+        t1.forward();
+        Thread.sleep(10);
+        t1.turn(90);
+        t1.forward(200);
+        Thread.sleep(10);
+        
+        
+        t1.setPenColor(Color.MAGENTA);
+        t1.turnToFace(544, 544);
+        Thread.sleep(10);
+        t1.forward(200);
+        Thread.sleep(10);
+        t1.turn(-90);
+        
+        x = 0;
+        while (x < 100)
+        {   
+            t1.forward(x);
+            x += 1;
+            t1.turn(90);
+            t1.setPenColor(Color.RED);
+            Thread.sleep(10);
+            t1.forward(x);
+            x += 1;
+            t1.turn(90);
+            t1.setPenColor(Color.BLACK);
+            t1.forward(x);
+            Thread.sleep(10);
+            x += 1;
+            t1.turn(90);
+            t1.setPenColor(Color.YELLOW);
+            t1.forward(x);
+            Thread.sleep(10);
+            x += 1;
+            t1.turn(90);
+            t1.setPenColor(Color.GREEN);
+        }
+        
         
         x = 0;
         while (x < 40)
@@ -70,8 +198,6 @@ public class TurtleLab
            Thread.sleep(10);
         }
         
-        t1.forward(100);
-        Thread.sleep(10);
         x = 0;
         while (x < 100)
         {   
@@ -83,32 +209,17 @@ public class TurtleLab
             t1.forward(x);
             x += 1;
             t1.turn(90);
-            t1.setPenColor(Color.GREEN);
+            t1.setPenColor(Color.MAGENTA);
             t1.forward(x);
             Thread.sleep(10);
             x += 1;
             t1.turn(90);
-            t1.setPenColor(Color.ORANGE);
+            t1.setPenColor(Color.RED);
             t1.forward(x);
             Thread.sleep(10);
             x += 1;
             t1.turn(90);
             t1.setPenColor(Color.BLACK);
         }
-        
-        t1.forward();
-        Thread.sleep(10);
-        t1.turn(90);
-        t1.forward(200);
-        Thread.sleep(10);
-        
-        //Turtle 2 movement
-        t2.turnToFace(544, 544);
-        Thread.sleep(10);
-        t2.forward(200);
-        Thread.sleep(10);
-        t2.turn(-90);
-        
-        
-   }
+    }
 }
